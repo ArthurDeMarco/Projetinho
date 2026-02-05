@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Formulário | Pk Chaves</title>
+</head>
+<body>
+  <header>
+    <nav class="menu-principal">
+      <h2>Pk Chaves</h2>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="form.html">Formulário</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="formulario">
+      <form method="POST" action="backend/cadastro.php">
+
+        <div class="perguntas_form">
+          <label for="nome_usuario">Nome</label><br>
+          <input type="text" id="nome_usuario" name="nome_usuario" placeholder="Digite seu nome" required>
+        </div><br>
+
+        <div class="perguntas_form">
+          <label for="gmail_usuario">Gmail</label><br>
+          <input type="email" id="gmail_usuario" name="gmail_usuario" placeholder="Digite seu Gmail" required>
+        </div><br>
+
+        <div class="perguntas_form">
+          <label for="telefone_usuario">Telefone</label><br>
+          <input type="tel" id="telefone_usuario" name="telefone_usuario" placeholder="(xx) xxxxx-xxxx" required>
+        </div><br>
+
+        <div class="perguntas_form">
+          <label for="senha_usuario">Senha</label><br>
+          <input type="password" id="senha_usuario" name="senha_usuario" placeholder="Digite sua senha" required>
+        </div><br>
+
+        <div class="perguntas_form">
+          <label for="confirmar_senha">Confirmar Senha</label><br>
+          <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirme sua senha" required>
+        </div><br>
+
+        <div class="perguntas_form checkbox-termos">
+          <input type="checkbox" id="termos_servico" name="termos_servico" required>
+          <label for="termos_servico">Eu concordo com os <a href="#">termos de serviço</a></label>
+        </div><br>
+
+        <div class="perguntas_form_submit">
+          <input type="submit" class="submit_form" value="Cadastrar">
+          <input type="reset" class="reset_form" value="Limpar">
+        </div>
+
+        <div class="login-link" style="text-align:center; margin-top:15px;">
+          <p>Já possui conta?
+            <a href="login.php" style="color:#111c5f; font-weight:bold;">
+              Clique aqui para entrar
+            </a>
+          </p>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Pk Chaves | Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script/script.js"></script> 
+</body>
+</html>
